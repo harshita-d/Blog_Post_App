@@ -3,5 +3,5 @@ from .models import BlogPostModel
 from .serializers import BlogPostSerializer
 
 class BlogPostCreateList(generics.ListCreateAPIView):
-    queryset=BlogPostModel
+    queryset=BlogPostModel.objects.all()
     serializer_class=BlogPostSerializer
